@@ -19,6 +19,20 @@ class Person {
     };
 };
 
+class Vehicle {
+    String model, company;
+    int year;
+    Vehicle(String Model, String Company, int Year) {
+        this.model = Model;
+        this.company = Company;
+        this.year = Year;
+    };
+
+    Vehicle(String Model, String Company) {
+        this.model = Model;
+        this.company = Company;
+    }
+}
 
 public class Objects {
 
@@ -41,6 +55,11 @@ public class Objects {
             
         }
 
-    }
+    };
+
+    // Overloading the initializer
+    Vehicle someClass = new Vehicle("A4", "BMW");
+    Vehicle some = new Vehicle("Z5", "BMW", 2000);
+    
 
 };
