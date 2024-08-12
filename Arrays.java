@@ -13,5 +13,23 @@ public class Arrays {
 
         // We can also create objects or String arrays as demonstrated in Objects.java
 
+        // Looping through the Array
+        // 1. We can use that for loop with i variable and Array.length property
+        
+        // 2. For loop without the iteration variable..
+
+        // Demonstrating the second method
+
+        for (int x : nums) {
+            System.out.println(x);
+        }
+
+        // Output : 1 2 3 4 5
+
+
+        // Similarly, we can create multidimensional Array
+        int[][] a = {{1,2,3},{4,5,6}};
+
+        System.out.println(a[1][2]); // Output 6
     }
 }
