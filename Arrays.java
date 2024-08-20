@@ -31,5 +31,8 @@ public class Arrays {
         int[][] a = {{1,2,3},{4,5,6}};
 
         System.out.println(a[1][2]); // Output 6
+
+        // import java.util.ArrayList which can create a resizable Array!
+        
     }
 }
