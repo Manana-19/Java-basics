@@ -32,6 +32,25 @@ class Vehicle {
         this.model = Model;
         this.company = Company;
     }
+};
+
+class Car extends Vehicle {
+
+    String Model, Company;
+    int Year;
+
+    Car(String Model, String Company) {
+        super(Model, Company);
+    };
+
+    Car(String Model, String Company, int Year) {
+        super(Model, Company, Year);
+    }
+
+    public void sound() {
+        System.out.println("Initial D");
+    }
+    
 }
 
 public class Objects {
@@ -53,13 +72,15 @@ public class Objects {
 
             System.out.println(Something.info());
             
-        }
+        };
+
+            // Overloading the initializer
+        Car s = new Car("Z5", "BMW", 2000);
+
+        s.sound();
+
 
     };
 
-    // Overloading the initializer
-    Vehicle someClass = new Vehicle("A4", "BMW");
-    Vehicle some = new Vehicle("Z5", "BMW", 2000);
-    
 
-};
+}
